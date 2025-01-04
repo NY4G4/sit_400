@@ -4,45 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register - Clars Vehicles Limited</title>
-    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Clars Vehicles Limited</a>
-        </nav>
+        <h1>Register - Clars Vehicles Limited</h1>
     </header>
-
     <main>
-        <section class="register-section">
-            <h1>Create an Account</h1>
-            <form id="register-form">
-                <div class="form-group">
-                    <label for="full-name">Full Name:</label>
-                    <input type="text" id="full-name" name="full-name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                <button type="submit" class="btn">Register</button>
-            </form>
-            <p>Already have an account? <a href="login.html">Login here</a></p>
-        </section>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Create a password">
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number:</label>
+                <input type="tel" id="phone_number" name="phone_number" required placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="date_of_birth">Date of Birth:</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" required>
+            </div>
+            <div class="form-group">
+                <label for="id_number">National ID Number:</label>
+                <input type="text" id="id_number" name="id_number" required placeholder="Enter your ID number">
+            </div>
+            <div class="form-group">
+                <label for="driver_license">Driver's License (Optional):</label>
+                <input type="text" id="driver_license" name="driver_license" placeholder="Enter your driver's license">
+            </div>
+            <div class="form-group">
+                <label for="user_role">Role:</label>
+                <select id="user_role" name="user_role" required>
+                    <option value="">Select your role</option>
+                    <option value="hirer">Hirer</option>
+                    <option value="vehicle_owner">Vehicle Owner</option>
+                </select>
+            </div>
+            <button type="submit">Register</button>
+        </form>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Clars Vehicles Limited. All rights reserved.</p>
-    </footer>
-
-    <script src="register.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
