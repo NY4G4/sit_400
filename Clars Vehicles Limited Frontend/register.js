@@ -9,7 +9,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         date_of_birth: document.getElementById('date_of_birth').value,
         id_number: document.getElementById('id_number').value,
         driver_license: document.getElementById('driver_license').value || null,
-        user_role: document.getElementById('user_role').value,
+        
     };
 
     console.log('User Data:', formData);
