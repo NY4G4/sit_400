@@ -1,118 +1,127 @@
-/* General Styling */
+/* Global Styles */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e3a8a; /* UEFA Champions League blue */
+    color: #ffffff; /* White text for readability */
     line-height: 1.6;
-    color: #333;
-    background: #e5efff; /* UEFA Champions League-like background */
 }
 
-header {
-    background: #0044cc;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
+/* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    background-color: #003399;
+    background-color: #1e3a8a;
+    padding: 1rem;
 }
 
 .navbar .logo {
+    color: #ffffff;
     font-size: 1.5rem;
     font-weight: bold;
-    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.navbar .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-}
-
-.navbar .nav-links {
+.nav-links {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     gap: 1rem;
 }
 
-.navbar .nav-links li {
-    margin: 0;
-}
-
-.navbar .nav-links a {
+.nav-links a {
     text-decoration: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
-.navbar .nav-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-    .navbar .menu-toggle {
-        display: block;
-    }
-
-    .navbar .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #003399;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-    }
-
-    .navbar .nav-links.active {
-        display: flex;
-    }
+.nav-links a:hover,
+.nav-links .active {
+    color: #ffcd3c; /* Gold accent */
 }
 
 /* Hero Section */
 .hero {
+    background-color: #123370; /* Slightly darker blue for contrast */
+    padding: 3rem 1rem;
     text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(rgba(0, 68, 204, 0.8), rgba(0, 51, 153, 0.8)), url('hero-image.jpg') center/cover no-repeat;
-    color: white;
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    color: #d1d5db; /* Light gray for description text */
+    margin: 1rem 0;
 }
 
-.hero .btn {
-    background: #f4b400;
-    color: white;
+/* Buttons (Common Styling) */
+.btn {
+    background-color: #ffcd3c; /* Gold */
+    color: #123370; /* Dark blue for text */
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 1rem;
-    transition: background 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.hero .btn:hover {
-    background: #d99400;
+.btn:hover {
+    background-color: #ffbf00; /* Slightly darker gold */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Forms */
+form {
+    background-color: #123370;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form input,
+form textarea,
+form select {
+    color: #123370;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffcd3c;
 }
 
 /* Footer */
 footer {
-    background: #003399;
-    color: white;
-    text-align: center;
+    background-color: #1e3a8a;
     padding: 1rem;
+    text-align: center;
+    color: #ffffff;
 }
