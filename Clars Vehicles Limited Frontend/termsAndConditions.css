@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e3a8a; /* UEFA Champions League blue */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.navbar {
+    background-color: #123370;
+    padding: 1rem;
+}
+
+.navbar .logo {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcd3c; /* Gold accent */
+}
+
+.terms-section {
+    background-color: #123370;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.terms-section h1, .terms-section h2 {
+    color: #ffcd3c; /* Gold accent */
+}
+
+.terms-section p, .terms-section a {
+    color: #d1d5db; /* Light gray for readability */
+}
+
+.terms-section a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.terms-section a:hover {
+    text-decoration: underline;
+    color: #ffbf00; /* Brighter gold */
+}
+
+footer {
+    background-color: #1e3a8a;
+    padding: 1rem;
+    text-align: center;
+    color: #ffffff;
+}

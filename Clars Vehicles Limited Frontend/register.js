@@ -25,3 +25,15 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
     // .then(data => console.log('Success:', data))
     // .catch(error => console.error('Error:', error));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const registerForm = document.getElementById("registerForm");
+    const termsCheckbox = document.getElementById("terms");
+
+    registerForm.addEventListener("submit", (e) => {
+        if (!termsCheckbox.checked) {
+            e.preventDefault();
+            alert("You must agree to the Terms and Conditions to register.");
+        }
+    });
+});
