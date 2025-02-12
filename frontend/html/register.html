@@ -1,62 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Clars Vehicles Limited</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Register - Clars Vehicles Limited</title>
+  <link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
-    <header>
-        <h1>Register - Clars Vehicles Limited</h1>
-    </header>
-    
-    <main>
-        <form id="registerForm">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required placeholder="Enter your full name">
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required placeholder="Enter your email">
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required placeholder="Create a password">
-            </div>
-            <div class="form-group">
-                <label for="phone_number">Phone Number:</label>
-                <input type="tel" id="phone_number" name="phone_number" required placeholder="Enter your phone number">
-            </div>
-            <div class="form-group">
-                <label for="date_of_birth">Date of Birth:</label>
-                <input type="date" id="date_of_birth" name="date_of_birth" required>
-            </div>
-            <div class="form-group">
-                <label for="id_number">National ID Number:</label>
-                <input type="text" id="id_number" name="id_number" required placeholder="Enter your ID number">
-            </div>
-            <div class="form-group">
-                <label for="driver_license">Driver's License Number(Optional):</label>
-                <input type="text" id="driver_license" name="driver_license" placeholder="Enter your driver's license number">
-            </div>
-            
-            </div>          
-           
-            <!-- Terms and Conditions -->
-            <div class="terms-container">
-                <input type="checkbox" id="terms" name="terms" required>
-                <label for="terms">
-                    I agree to the application's 
-                    <a href="termsAndConditions.html" target="_blank">Terms and Conditions</a>
-                </label>
-                
-            </div>
-            
-            <button type="submit" class="btn">Register</button>
-        </form>
-    </main>
-    <script src="register.js"></script>
+  <header>
+    <h1>Register - Clars Vehicles Limited</h1>
+  </header>
+  
+  <main>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Create a password">
+      </div>
+      <div class="form-group">
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" required placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required>
+      </div>
+      <div class="form-group">
+        <label for="id_number">National ID Number:</label>
+        <input type="text" id="id_number" name="id_number" required placeholder="Enter your ID number">
+      </div>
+      <div class="form-group">
+        <label for="driver_license">Driver's License Number (Optional):</label>
+        <input type="text" id="driver_license" name="driver_license" placeholder="Enter your driver's license number">
+      </div>
+      <!-- Terms and Conditions -->
+      <div class="terms-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">
+          I agree to the application's 
+          <a href="termsAndConditions.html" target="_blank">Terms and Conditions</a>
+        </label>
+      </div>
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clars Vehicles Limited</p>
+  </footer>
+  <script src="../js/register.js"></script>
 </body>
 </html>
