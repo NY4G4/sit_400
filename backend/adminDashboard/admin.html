@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Clars Vehicles Limited</title>
+    <link rel="stylesheet" href="css/admin.css">
+    <script defer src="js/admin.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Vehicles</a></li>
+            <li><a href="#">Transactions</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Dashboard Overview</h1>
+        </header>
+
+        <!-- Summary Cards -->
+        <div class="dashboard-cards">
+            <div class="card">
+                <h3>Total Users</h3>
+                <p id="total-users">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Total Vehicles</h3>
+                <p id="total-vehicles">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Total Transactions</h3>
+                <p id="total-transactions">Loading...</p>
+            </div>
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p id="total-revenue">Loading...</p>
+            </div>
+        </div>
+
+        <!-- User Table -->
+        <section class="table-section">
+            <h2>Registered Users</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="users-table">
+                    <!-- User Data Fetched Here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Report Generation -->
+        <section class="reports">
+            <h2>Generate Reports</h2>
+            <button id="generate-report">Download Report</button>
+        </section>
+    </div>
+
+</body>
+</html>
