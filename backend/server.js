@@ -20,7 +20,7 @@ const users = [
 const db = mysql.createConnection({
   host: "localhost",
   user: "root", // Replace with your MySQL username
-  password: "", // Replace with your MySQL password
+  password: "Ny4g4@mufc", // Replace with your MySQL password
   database: "clars_vehicles_limited", // Replace with your database name
 });
 
