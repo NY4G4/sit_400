@@ -1,25 +1,21 @@
 const URL = 'http://localhost:3000';
 
-// JavaScript for Login Page
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('login-form');
 
     loginForm.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Prevent form submission
+        event.preventDefault();
 
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
-        console.log(email, password);
-
-        // Perform basic validation
         if (!email || !password) {
             alert('Please fill out both fields.');
             return;
         }
 
         try {
-            const response = await  fetch(`${URL}/login`, {
+            const response = await fetch('http://localhost:5000/api/users/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email, password })
@@ -29,14 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (response.ok) {
                 alert(data.message);
-                window.location.href = data.redirect; // Redirect to dashboard
+                window.location.href = data.redirect;
             } else {
-                alert(data.message); // Show error message
+                alert(data.message);
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Login failed. Please try again later.');
+            alert('Login failed. Please try again.');
         }
     });
-  
 });
