@@ -1,81 +1,72 @@
-/* Login Page Specific Styling */
+/* Global Styles */
 body {
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #aeb2be; /* UEFA Champions League blue */
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-.navbar {
-    background-color: #0044cc;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-.navbar .logo {
-    color: white;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
-.login-section {
+#loginForm {
+    width: 70%;
     max-width: 400px;
-    margin: 3rem auto;
+    margin: 2rem auto;
+    background-color: #123370; /* Dark blue */
     padding: 2rem;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: #123370;
+    padding: 1rem 0;
     text-align: center;
 }
 
-.login-section h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-    text-align: left;
-}
-
-.form-group label {
+/* Form Styles */
+form label {
     display: block;
     margin-bottom: 0.5rem;
-    font-size: 1rem;
-    color: #555;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-.form-group input {
+form input, form select {
     width: 100%;
     padding: 0.5rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #0044cc;
-    color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
+    margin-bottom: 1rem;
     border: none;
     border-radius: 5px;
+    background-color: #1e3a8a; /* Dark blue input */
+    color: white;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ffcd3c;
+}
+
+/* Login Button */
+.login-btn {
+    background-color: #ffcd3c;
+    color: #123370;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
     cursor: pointer;
-    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #003399;
+.login-btn:hover {
+    background-color: #ffbf00;
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    margin-top: 2rem;
+    background-color: #1e3a8a;
     padding: 1rem;
-    background-color: #f4f4f4;
-    color: #555;
+    text-align: center;
+    color: #ffffff;
 }

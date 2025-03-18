@@ -1,77 +1,25 @@
-/* Global Styles for the Register Page */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #aeb2be; /* UEFA Champions League blue */
-    color: #ffffff; /* White text for readability */
-    line-height: 1.6;
+/* Terms and Conditions Section */
+.terms-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns to the left */
+    margin-top: 1rem;
 }
 
-#registerForm {
-    width: 70%;
-    max-width: 600px;
-    margin: 2rem auto;
-    background-color: #123370; /* Slightly darker blue for form background */
-    padding: 2rem;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header {
-    background-color: #123370; /* Same blue as form background */
-    padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-/* Form Styles */
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+.terms-container label {
+    color: #ffcd3c; /* Yellow text */
     font-weight: bold;
-    color: #ffffff; /* White text for labels */
+    margin-left: 0.5rem;
 }
 
-form input,
-form textarea,
-form select {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff; /* White text for input fields */
-    background-color: #1e3a8a; /* Dark blue for input backgrounds */
+.terms-container a {
+    color: #ffcd3c; /* Yellow for link */
+    text-decoration: underline;
 }
 
-form input:focus,
-form textarea:focus,
-form select:focus {
-    outline: none;
-    box-shadow: 0 0 5px #ffcd3c;
-}
-
-/* Register Button */
-.register-btn {
-    background-color: #ffcd3c; /* Yellow */
-    color: #123370; /* Dark blue text */
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
+.terms-container input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #ffcd3c; /* Yellow checkbox when checked */
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.register-btn:hover {
-    background-color: #ffbf00; /* Slightly darker yellow */
-}
-
-/* Footer Styles */
-footer {
-    background-color: #1e3a8a;
-    padding: 1rem;
-    text-align: center;
-    color: #ffffff;
 }

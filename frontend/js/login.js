@@ -1,37 +1,38 @@
-const URL = 'http://localhost:3000';
+document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-document.addEventListener('DOMContentLoaded', () => {
-    const loginForm = document.getElementById('login-form');
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const userType = document.getElementById('userType').value;
 
-    loginForm.addEventListener('submit', async (event) => {
-        event.preventDefault();
+    const loginData = {
+        email: email,
+        password: password,
+        userType: userType
+    };
 
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+    console.log('Login Data:', loginData);
 
-        if (!email || !password) {
-            alert('Please fill out both fields.');
-            return;
-        }
+    // Simulating login API call
+    fetch('/api/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(loginData),
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert("Login successful!");
 
-        try {
-            const response = await fetch('http://localhost:5000/api/users/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password })
-            });
-
-            const data = await response.json();
-
-            if (response.ok) {
-                alert(data.message);
-                window.location.href = data.redirect;
+            // Redirect based on user type
+            if (userType === "owner") {
+                window.location.href = "registerVehicles.html";
             } else {
-                alert(data.message);
+                window.location.href = "hireVehicles.html";
             }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Login failed. Please try again.');
+        } else {
+            alert("Invalid login credentials. Please try again.");
         }
-    });
+    })
+    .catch(error => console.error('Error:', error));
 });

@@ -40,20 +40,26 @@
         <label for="driver_license">Driver's License Number (Optional):</label>
         <input type="text" id="driver_license" name="driver_license" placeholder="Enter your driver's license number">
       </div>
-      <!-- Terms and Conditions -->
+
+      <!-- Terms and Conditions Section -->
       <div class="terms-container">
         <input type="checkbox" id="terms" name="terms" required>
         <label for="terms">
-          I agree to the application's 
-          <a href="termsAndConditions.html" target="_blank">Terms and Conditions</a>
+          <span class="terms-text">
+            I agree to the application's 
+            <a href="termsAndConditions.html" target="_blank">Terms and Conditions</a>
+          </span>
         </label>
       </div>
+
       <button type="submit" class="register-btn">Register</button>
     </form>
   </main>
+
   <footer>
     <p>&copy; 2025 Clars Vehicles Limited</p>
   </footer>
+
   <script src="../js/register.js"></script>
 </body>
 </html>
