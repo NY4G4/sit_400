@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Clars Vehicles Limited</title>
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <main>
+        <section class="vehicle-summary">
+            <h2>Selected Vehicle</h2>
+            <div class="vehicle-details">
+                <img id="vehicle-image" src="../images/default-car.jpg" alt="Vehicle Image">
+                <p><strong>Model:</strong> <span id="vehicle-model">Toyota Corolla</span></p>
+                <p><strong>Price per day:</strong> KES <span id="price-per-day">5000</span></p>
+            </div>
+        </section>
+
+        <section class="rental-details">
+            <h2>Rental Duration</h2>
+            <label for="rental-days">Select Number of Days:</label>
+            <input type="number" id="rental-days" min="1" value="1">
+            <p><strong>Total Price:</strong> KES <span id="total-price">5000</span></p>
+        </section>
+
+        <section class="payment-section">
+            <h2>Payment Details</h2>
+            <label for="payment-method">Choose Payment Method:</label>
+            <select id="payment-method">
+                <option value="card">Credit/Debit Card</option>
+                <option value="mpesa">M-Pesa</option>
+            </select>
+            <input type="text" id="payment-details" placeholder="Enter Payment Details">
+        </section>
+
+        <button id="confirm-booking">Confirm Booking</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clars Vehicles Limited</p>
+    </footer>
+
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

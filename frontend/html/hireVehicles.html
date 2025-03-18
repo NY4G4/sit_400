@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hire a Vehicle - Clars Vehicles Limited</title>
+    <link rel="stylesheet" href="../css/hireVehicles.css">
+</head>
+<body>
+    <header>
+        <h1>Hire a Vehicle</h1>
+    </header>
+
+    <main>
+        <!-- Filter Section -->
+        <section class="filters">
+            <label for="filter-model">Filter by Model:</label>
+            <select id="filter-model">
+                <option value="all">All</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Honda">Honda</option>
+                <option value="BMW">BMW</option>
+            </select>
+
+            <label for="filter-price">Filter by Price Range:</label>
+            <select id="filter-price">
+                <option value="all">All</option>
+                <option value="low">Low ($0 - $50/day)</option>
+                <option value="medium">Medium ($51 - $100/day)</option>
+                <option value="high">High ($101+/day)</option>
+            </select>
+        </section>
+
+        <!-- Available Vehicles List -->
+        <section id="vehicle-list">
+            <!-- Vehicles will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clars Vehicles Limited</p>
+    </footer>
+
+    <script src="../js/hireVehicles.js"></script>
+</body>
+</html>

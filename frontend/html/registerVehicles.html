@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Vehicle - Clars Vehicles Limited</title>
+    <link rel="stylesheet" href="../css/registerVehicle.css">
+</head>
+<body>
+
+    <header>
+        <h1>Register Your Vehicle</h1>
+    </header>
+
+    <main>
+        <form id="registerVehicleForm">
+            <div class="form-group">
+                <label for="vehicle_model">Vehicle Model:</label>
+                <input type="text" id="vehicle_model" name="vehicle_model" required placeholder="Enter vehicle model">
+            </div>
+            
+            <div class="form-group">
+                <label for="plate_number">License Plate Number:</label>
+                <input type="text" id="plate_number" name="plate_number" required placeholder="Enter plate number">
+            </div>
+
+            <div class="form-group">
+                <label for="year">Year of Manufacture:</label>
+                <input type="number" id="year" name="year" required placeholder="Enter manufacture year">
+            </div>
+
+            <div class="form-group">
+                <label for="seats">Number of Seats:</label>
+                <input type="number" id="seats" name="seats" required placeholder="Enter number of seats">
+            </div>
+
+            <div class="form-group">
+                <label for="insurance">Insurance Expiry Date:</label>
+                <input type="date" id="insurance" name="insurance" required>
+            </div>
+
+            <div class="form-group">
+                <label for="garage">Select Garage:</label>
+                <select id="garage" name="garage" required>
+                    <option value="" disabled selected>Select a garage</option>
+                    <option value="garage1">Garage 1</option>
+                    <option value="garage2">Garage 2</option>
+                    <option value="garage3">Garage 3</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="vehicle_photo">Upload Vehicle Photo:</label>
+                <input type="file" id="vehicle_photo" name="vehicle_photo" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="register-btn">Register Vehicle</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Clars Vehicles Limited</p>
+    </footer>
+
+    <script src="../js/registerVehicle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aeb2be; /* UEFA Champions League blue */
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #123370;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Filter Section */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #1e3a8a;
+}
+
+.filters label, .filters select {
+    font-size: 1rem;
+    color: white;
+}
+
+/* Vehicles List */
+#vehicle-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Vehicle Card */
+.vehicle-card {
+    background-color: #123370;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+}
+
+.vehicle-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.vehicle-card h3 {
+    margin: 0.5rem 0;
+}
+
+.vehicle-card button {
+    background-color: #ffcd3c;
+    color: #123370;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vehicle-card button:hover {
+    background-color: #ffbf00;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
