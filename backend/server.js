@@ -21,7 +21,7 @@ const db = mysql.createConnection({
   host: "localhost",
   user: "root", // Replace with your MySQL username
   password: "Ny4g4@mufc", // Replace with your MySQL password
-  database: "clars_vehicles_limited", // Replace with your database name
+  database: "clars_vehicles_limited_database", // Replace with your database name
 });
 
 db.connect((err) => {
